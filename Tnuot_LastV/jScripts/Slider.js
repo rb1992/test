@@ -73,7 +73,7 @@
 
     $(".ui-slider-handle.ui-state-default.ui-corner-all").css({
         "left": "100%",
-        "background-image": "url(../Tnuot/Img/DragSlider.png)"
+        "background-image": "url(../Img/DragSlider.png)"
     });
 
 });
