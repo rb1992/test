@@ -1,0 +1,88 @@
+/*מיקום וגודל האקורדיון בדפי התוכן ששם הוא קיים*/
+.Accordion {
+  margin-top:-135px;
+    margin-right:208px;
+    width: 680px;
+    margin-bottom:130px;
+}
+
+/*מיקום ווהגדרות טקסט של הפסקאות*/
+.Accordion p {
+        font-size:16px;
+        border: none;
+        text-decoration: none;
+        margin: 0px; 
+         
+}
+
+ /*נראות קישורים*/
+.Accordion p a {
+        text-decoration:underline;
+        color:#547823;
+}
+
+/*הגדרת הכותרת ברמה השלישית בכותרות האקורדיון*/
+.Accordion h3 {
+    
+        cursor: pointer;
+        display: block;
+        padding:5px;
+        padding-top:7px;
+        padding-right: 40px;
+        margin-top: 0;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+        background-image: url("../Img/Accordion_header.png");
+        background-repeat:no-repeat;
+        margin-bottom:5px;
+}
+
+/*הגדרת מיקום וגודל התוכן*/
+.Accordion .allData {
+        width:620px;
+        margin-right:40px;
+        margin-bottom: 10px;
+        line-height:30px;
+       
+}
+
+   
+
+.Accordion .allData #Midoot{
+      padding-right:24px;
+}
+
+/*הגדרת מיקום פסקאות בשילוב תמונות בתוך האקורדיון*/
+.Accordion .allData .Left_Pic {
+    margin-right:330px;
+    margin-top:-54px;
+}
+.Accordion .Left_p {
+    width:300px;     
+    margin-right:290px;
+}
+
+.Accordion .Right_p {
+            width:330px;
+
+}
+.Accordion .allData .Right_Pic {
+    margin-top:-84px;
+}
+
+/*מיקום הטמעת וידאו יוטיוב בתוך האקורדיון*/
+#YouTube {
+margin-right:290px;
+margin-top:-205px;
+}
+
+/*הגדרת מיקום וגובה תוכן מחוץ לאקורדיון בדף למי מיועד*/
+.OutSide_Accordion {
+    height:264px;
+    margin-right:249px;
+    margin-top:-143px;
+    line-height:30px;
+    
+}

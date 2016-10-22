@@ -1,0 +1,966 @@
+﻿/*הטמעת פונט*/
+@font-face {
+    font-family: 'FbPekan';
+    src: url('../FONTS/fbpekan-regular_0-webfont.eot');
+    src: url('../FONTS/fbpekan-regular_0-webfont.eot?#iefix') format('embedded-opentype'), url('../FONTS/fbpekan-regular_0-webfont.woff') format('woff'), url('../FONTS/fbpekan-regular_0-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*הגדרות כלליות לגוף האתר*/
+body {
+    font-family: FbPekan;
+    direction: rtl;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+#English {
+    font-family: Arial;
+    font-size: 13px;
+}
+/*הגדרה גנרית להבלטת טקסטים לאורך כל האתר*/
+.Bold {
+    font-weight: bold;
+}
+
+/*הגדרות כלליות לקונטנייר*/
+#container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../img/Background.png');
+    z-index: 0;
+}
+/*הגדרה שכל קישור יהיה ללא קו תחתון ובצבע שחור*/
+a {
+    text-decoration: none;
+    color: black;
+}
+/*-------------------------------------------------Header-------------------------------------------*/
+
+/*הגדרות כלליות לחלק העליון*/
+header {
+    height: 90px;
+    width: 960px;
+    background-color: #CBE5A6;
+    position: absolute;
+    z-index: 2;
+}
+/*מיקום הלוגו*/
+#logo {
+    margin-top: 37px;
+    margin-right: 11px;
+    position: absolute;
+}
+
+    #logo img {
+        width: 219px;
+        height: 47px;
+    }
+/*------------------------------סרגל השפות----------------------------------*/
+/*מיקום והגדרות לסרגל השפות*/
+#LanguageNAV ul {
+    direction: ltr;
+    margin-left: 9px;
+    margin-top: 8px;
+    font-size: 8pt;
+}
+
+    #LanguageNAV ul li {
+        display: inline-block;
+    }
+
+        #LanguageNAV ul li:after {
+            content: " |";
+        }
+
+        #LanguageNAV ul li:last-child:after {
+            content: none;
+        }
+/*------------------------------סוף סרגל השפות----------------------------------*/
+
+/*------------------------------תפריט גלובאלי----------------------------------*/
+/*מיקום והגדרות לתפריט הגלובאלי*/
+#GlobalNAV ul {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 642px;
+    margin-top: 40px;
+}
+
+    #GlobalNAV ul > li {
+        display: inline-block;
+    }
+
+        #GlobalNAV ul > li:after {
+            content: "|";
+        }
+
+        #GlobalNAV ul > li:last-child:after {
+            content: none;
+        }
+
+
+    #GlobalNAV ul li a {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    #GlobalNAV ul li:hover a {
+        color: #4F4F4F;
+    }
+
+    /*הגדרות לתפריט הפנימי הנמצא בתפריט הגלובאלי*/
+    #GlobalNAV ul li ol {
+        display: none;
+        position: absolute;
+    }
+
+    #GlobalNAV ul li:hover ol {
+        display: block;
+    }
+
+    #GlobalNAV ul li ol li {
+        padding-top: 13px;
+    }
+
+        #GlobalNAV ul li ol li a {
+            font-size: 13px;
+            color: white;
+            font-weight: 100;
+        }
+
+        /*הגדרות מעבר עכבר לתפריט הפנימי הנמצא בתפריט הגלובאלי*/
+        #GlobalNAV ul li ol li:hover a {
+            color: #CBE5A6 !important;
+        }
+
+    /*הגדרות לטאב של התפריט תנועות הפתוח בתפריט הגלובאלי*/
+    #GlobalNAV ul #Noar:hover {
+        height: 40px;
+        background-color: #404040;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+        #GlobalNAV ul #Noar:hover a {
+            color: white;
+        }
+
+/* רקע לתפריט הגלובאלי הפנימי של תנועות הנוער*/
+#GlobalNav_Back {
+    width: 360px;
+    height: 102px;
+    background-color: #404040;
+    margin-top: 13px;
+    margin-right: -42px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+    #GlobalNav_Back li {
+        line-height: 9px;
+        display: block;
+    }
+
+        #GlobalNav_Back li:before {
+            content: ">";
+            color: white;
+        }
+
+/*יישור תתי התפריט ל4 קבוצות*/
+.NAVGroup1 {
+    margin-right: 4px;
+}
+
+.NAVGroup2 {
+    margin-right: 90px;
+}
+
+.NAVGroup3 {
+    margin-right: 180px;
+}
+
+.NAVGroup4 {
+    margin-right: 270px;
+    width: 200px;
+}
+/*יישור הערך הראשון בכל קבוצה של תתי התפריט לשורה הראשונה*/
+.NextLine {
+    margin-top: -90px;
+}
+
+/*------------------------------סוף תפריט גלובאלי----------------------------------*/
+
+/*---------------------------------------------------------------END Header-----------------------------------------------*/
+
+
+
+/*------------------------------חצי עיגול-------------------------------------------*/
+
+/*הגדרת חצי עיגול */
+#HalfCircle {
+    height: 219px;
+    width: 219px;
+    background-color: #4F4F4F;
+    border-radius: 800px;
+    margin-top: -26px;
+    margin-right: 13px;
+    position: absolute;
+    z-index: 1;
+    -webkit-box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.48);
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.48);
+}
+    /*הגדרות לכותרת מה תיהיה החוויה של הילך שלך*/
+    #HalfCircle h1 {
+        font-weight: normal;
+        margin-top: 140px;
+        margin-right: 29px;
+        position: absolute;
+        font-size: 28px;
+        color: white;
+        text-align: center;
+        width: 160px;
+    }
+
+    /*הגדרות התמונה בתוך חצי העיגול בתוך דפי התוכן*/
+    #HalfCircle img {
+        width: 60px;
+        margin-top: 118px;
+        margin-right: 77px;
+        position: absolute;
+    }
+/*------------------------------סוף חצי עיגול-------------------------------------------*/
+
+
+/*------------------------------משולש חשוף/הסתר תנועות-------------------------------------------*/
+
+/*הגדרת המשולש - חשוף והסתר תנועות */
+#triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 70px solid #E7E6E1;
+    margin-right: 890px;
+    margin-top: 90px;
+}
+    /*הגדרת הטקסט בתוך המשולש */
+    #triangle #Exposed, #triangle #Hide {
+        color: black;
+        transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+        font-size: 14px;
+        width: 100px;
+        margin-right: -65px;
+        margin-top: -35px;
+    }
+    /*הטקסט הסתר תנועות מוסתר בפתיחת העמוד*/
+    #triangle #Hide {
+        display: none;
+    }
+/*------------------------------סוף משולש חשוף תנועות-------------------------------------------*/
+
+
+/*-----------------------------------------------ודף הבית-Scroll----------------------------------------*/
+
+/*הגדרות גודל ומיקום לתפריט הזז*/
+.scroll-content {
+    width: 3260px;
+    height: 450px;
+    float: left;
+    margin-left: -2300px;
+}
+    /*הגדרות גודל והטקסט לעיגולי התנועות בדף הבית*/
+    .scroll-content li {
+        width: 183px;
+        height: 183px;
+        float: right;
+        font-size: 18px;
+        background: white;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 180px;
+        text-align: right;
+        display: inline-block;
+        -webkit-box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.48);
+        box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.48);
+    }
+        /*  הגדרות מיקום לעיגולי התנועות בדף הבית */
+        .scroll-content li:nth-child(odd) {
+            margin-top: 255px;
+            margin-right: 60px;
+            margin-left: 20px;
+        }
+
+        .scroll-content li:nth-child(even) {
+            margin-top: 82px;
+        }
+
+        /*הגדרות תמונת הנער בעיגול*/
+        .scroll-content li .Tnoha a .Show .TnohaChild {
+            width: 103px;
+            height: 103px;
+            margin-top: -50px;
+            margin-right: -45px;
+        }
+        /*הגדרות טקסט בתוך העיגולים*/
+        .scroll-content li .Tnoha a .Show .TnohaText {
+            height: 140px;
+            width: 130px;
+            margin-top: -3px;
+            margin-right: 30px;
+        }
+            /*הגדרות הגודל של הבלטת טקסט בתוך העיגולים*/
+            .scroll-content li .Tnoha a .Show .TnohaText .Bold {
+                font-size: 23px;
+            }
+            /*הגדרות טקסט קרא עוד בתוך העיגולים*/
+            .scroll-content li .Tnoha a .Show .TnohaText .ReadMore {
+                font-size: 13px;
+                margin-top: 37px;
+                margin-right: 42px;
+            }
+
+        /*תמונת פעילות נסתרת בפתיחת העמוד*/
+        .scroll-content li .Tnoha a .Hidden {
+            display: none;
+        }
+            /*הגדרות תמונת הלוגו לאחר מעבר עכבר*/
+            .scroll-content li .Tnoha a .Hidden .Tnohalogo {
+                width: 103px;
+                height: 103px;
+                margin-top: -45px;
+                margin-right: -40px;
+            }
+/*-----------------------------------------------ודף הבית-Scroll-סוף---------------------------------------*/
+
+
+
+
+/*----------------------------------------------דפי תוכן הגדרות כלליות--------------------------------------------------*/
+
+/*הגדרות גובה מינמלי לאיזור התוכן*/
+#MainContent {
+    min-height: 575px;
+}
+
+/*הגדרות כותרת ראשית ומשנית*/
+#titles h1, #titles h2 {
+    margin-right: 250px;
+    color: black;
+    font-size: 22px;
+}
+
+#titles h1 {
+    padding-top: 130px;
+    font-size: 28px;
+}
+/*----------------------------------------------סוף דפי תוכן הגדרות כלליות-------------------------------------------*/
+
+
+
+/*----------------------------------------------תפריט צידי בעמודי תוכן--------------------------------------------------*/
+/*הגדרות תפריט צד בדפי התוכן*/
+#SideNav {
+    list-style: none;
+    font-size: 15px;
+    height: 134px;
+    width: 134px;
+    margin-right: 50px;
+    margin-top: 35px;
+}
+
+    #SideNav ul li {
+        height: 30px;
+        width: 150px;
+        background-color: rgba(203, 229, 166, 0.37);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+    }
+
+        #SideNav ul li a {
+            display: block;
+            padding-right: 17px;
+            padding-top: 12px;
+        }
+
+        /*הגדרות מעבר עכבר על קטגוריות בתפריט הצד*/
+        #SideNav ul li:hover {
+            opacity: 0.7;
+        }
+
+    /*סימון הטאב הרלוונטי לדף התוכן המוצג*/
+    #SideNav ul .here {
+        background-color: #CBE5A6;
+    }
+
+/*----------------------------------------------סוף תפריט צידי בעמודי תוכן-----------------------------------------------*/
+/*-----------------------------------------------------------קוביית עדכון אחרון ועדכן אותנו----------------------------------*/
+/*הגדרת מיקום, גודל וצבע קוביית עדכן אותנו*/
+#Update {
+    height: 40px;
+    width: 134px;
+    line-height: 19px;
+    background-color: #EAE9E8;
+    font-size: 13px;
+    margin-right: 50px;
+    margin-top: 33px;
+    padding-top: 5px;
+    padding-right: 16px;
+    position: absolute;
+    list-style: none;
+}
+    /*נראות קישור*/
+    #Update a {
+        color: #47661E;
+        text-decoration: underline;
+    }
+
+/*-----------------------------------------------------------סוף קוביית עדכון אחרון ועדכן אותנו----------------------------------*/
+
+
+/*---------------------------------------------תפריט צור קשר עם התנועה--------------------------------------------------*/
+
+/*הגדרות גודל ומיקום התפריט*/
+#Tnuah_Content {
+    height: 150px;
+    width: 150px;
+    background-color: #EAE9E8;
+    margin-right: 50px;
+    margin-top: 90px;
+    position: absolute;
+}
+    /*הגדרות כותרת ברמה הרביעית*/
+    #Tnuah_Content h4 {
+        font-size: 18px;
+        font-weight: normal;
+        padding-right: 15px;
+        padding-top: 12px;
+    }
+
+    #Tnuah_Content ul {
+        padding-right: 15px;
+    }
+
+        /*הגדרת מעבר עכבר על צלמיות החברתי*/
+        #Tnuah_Content ul .social:hover {
+            opacity: 0.8;
+        }
+
+    /*הגדרת נראות הקישור לאתר התנועה*/
+    #Tnuah_Content a {
+        text-decoration: underline;
+        color: #47661E;
+        line-height: 40px;
+        text-align: center;
+    }
+    /*הגדרת נראות המיקום צלמיות החברתי*/
+    #Tnuah_Content .social {
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+
+/*--------------------------------------------- סוף תפריט צור קשר עם התנועה--------------------------------------------------*/
+
+
+
+/*----------------------------------------------דף פעילויות בתנועה -----------------------------------------*/
+
+/*מיקום התוכן*/
+#Havtaha_DATA {
+    margin-right: 250px;
+    margin-top: -60px;
+}
+/*מיקום וגודל רקע הכותרת - פס הצבע הירוק*/
+#Havtaha_back {
+    background-image: url("../Img/Accordion_header.png");
+    background-repeat: no-repeat;
+    height: 27px;
+    width: 677px;
+    margin-top: -135px;
+    margin-right: -40px;
+}
+/*הגדרות מיקום וגודל לכותרת ברמה השלישית*/
+h3 {
+    padding-right: 40px;
+    padding-top: 7px;
+    font-weight: normal;
+    font-size: 18px;
+}
+/*הגדרת מיקום וגודל מינימלי לפסקאות */
+#Havtaha_DATA p {
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+    /*הגדרות מיקום לפסקאות*/
+    #Havtaha_DATA p:nth-child(5) {
+        padding-right: 290px;
+        margin-top: -5px;
+    }
+/*הגדרת מיקום לתממונה והוספת צל*/
+#Havtaha_DATA img {
+    position: absolute;
+    -webkit-box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.48);
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.48);
+}
+
+
+/*הגדרת מיקום וגודל*/
+#Mifaalim_Nav {
+    font-size: 13px;
+    width: 677px;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+    /*------------------------הגדרות לתפריט מפעלים תחתון---------------------------*/
+
+    #Mifaalim_Nav ul li {
+        display: inline-block;
+    }
+
+        #Mifaalim_Nav ul li a {
+            display: block;
+            background-image: url("../Img/Mifaalim_back.png");
+            width: 99px;
+            height: 20px;
+            padding-top: 7px;
+            padding-right: 5px;
+        }
+
+
+    #Mifaalim_Nav ul .Mifaalim_line2 {
+        margin-top: 10px;
+    }
+
+    #Mifaalim_Nav ul #Mifaal_selected a {
+        background-image: url("../Img/Mifaalim_back_Selected.png");
+        width: 99px;
+        height: 20px;
+    }
+
+    #Mifaalim_Nav ul li :hover {
+        opacity: 0.8;
+    }
+/*------------------------הגדרות לתפריט מפעלים תחתון---------------------------*/
+
+/*---------------------------------------------סוף דף פעילויות בתנועה--------------------------------------------------*/
+
+
+
+/*-------------------------------------הגדרת בועיות הטול טיפ בדף מונחים וסמלים-------------------------------------------------*/
+
+#Terms {
+    list-style: none;
+}
+    /*הגדרות לטקסט המונחיפ*/
+    #Terms li {
+        display: inline-block;
+    }
+
+        #Terms li:after {
+            content: "|";
+        }
+
+        #Terms li:last-child:after {
+            content: none;
+        }
+
+        /*הצגת הסברים במעבר על מונח*/
+        #Terms li:hover .Quote {
+            display: block;
+        }
+    /*הסברים למונחים מוסתרים בטעינת הדף*/
+    #Terms .Quote {
+        display: none;
+        margin-top: -10px;
+        position: absolute;
+    }
+
+        /*הגדרת מיקום הטקסט בהסבר המונחים*/
+        #Terms .Quote p {
+            background-image: url("../Img/Terms_bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: right;
+            font-size: 14px;
+            max-width: 160px;
+            padding: 8px;
+        }
+
+/*-------------------------------------סוף הגדרת בועיות הטול טיפ בדף מונחים וסמלים -------------------------------------------------*/
+
+
+/*--------------------------------------------- סרגל תנועות -תפריט תנועות תחתון--------------------------------------------------*/
+
+/*הגדרת גודל ומיקום לתפריט התנועות התחתון*/
+#Tnuah_Nav {
+    width: 842px;
+    height: 80px;
+    border-bottom: 1px solid rgba(79, 79, 79, 0.30);
+    border-top: 1px solid rgba(79, 79, 79, 0.30);
+    margin-right: 47px;
+    margin-top: 30px;
+    font-size: 11px;
+}
+
+    #Tnuah_Nav ul {
+        margin-right: 1px;
+    }
+
+        #Tnuah_Nav ul li {
+            display: inline-block;
+            background-color: #DEDDDD;
+            width: 59px;
+            margin-right: 4px;
+            height: 80px;
+        }
+
+            #Tnuah_Nav ul li:nth-child(1) {
+                margin-right: 0px;
+            }
+
+
+            #Tnuah_Nav ul li a {
+                display: block;
+                text-align: center;
+                width: 55px;
+                position: absolute;
+                padding-top: 50px;
+                padding-right: 2px;
+            }
+
+        #Tnuah_Nav ul .Lines a {
+            padding-top: 45px;
+        }
+        /*הגדרת גודל ומיקום התמונות של התנועות*/
+        #Tnuah_Nav ul li a img {
+            width: 66px;
+            height: 60px;
+            margin-top: -50px;
+            margin-right: -6px;
+        }
+
+    /*הגדרת תמונת רקע לבלון הציטוט, מיקום וגודל*/
+    #Tnuah_Nav .Quote {
+        display: none;
+        background-image: url(../Img/Quote_Balon.png);
+        background-repeat: no-repeat;
+        width: 135px;
+        height: 150px;
+        position: absolute;
+        margin-top: -200px;
+        margin-right: -50px;
+        z-index: 2;
+    }
+        /*מיקום הציטוטים בתוך הבועיות הנגלות לאחר מאחר עכבר*/
+        #Tnuah_Nav .Quote p {
+            text-align: right;
+            font-size: 14px;
+            width: 105px;
+            height: 120px;
+            padding-top: 39px;
+            padding-right: 20px;
+        }
+
+            #Tnuah_Nav .Quote p .Bold {
+                font-size: 17px;
+            }
+
+    #Tnuah_Nav .Lines .Quote {
+        margin-top: -195px;
+    }
+
+    #Tnuah_Nav li:hover .Quote {
+        display: block;
+    }
+
+/*---------------------------------------------סוף סרגל תנועות תחתון--------------------------------------------------*/
+
+
+/*-----------------------------------------------------דף פריסה ארצית-----------------------------------------------------*/
+/*הורדת מספרים מהרשימה*/
+.allData .Snifim_Align {
+    list-style: none;
+}
+    /*הגדרת הטקסט כטקסט שורה*/
+    .allData .Snifim_Align li {
+        display: inline-block;
+    }
+        /*הוספת סימן הפרדה*/
+        .allData .Snifim_Align li:after {
+            content: " |";
+        }
+        /*הגדרה שסימן ההפרדה לא יהיה אחרי המילה האחרונה בפסקה*/
+        .allData .Snifim_Align li:last-child:after {
+            content: none;
+        }
+/*נראות ומיקום הקישור*/
+#Map_Zofim {
+    color: #547823;
+    text-decoration: underline;
+    margin-right: 240px;
+    margin-top: -105px;
+    position: absolute;
+}
+
+
+/*-----------------------------------------------------סוף דף פריסה ארצית-----------------------------------------------------*/
+
+
+/*--------------------------------------------------- דף צור קשר--------------------------------------------------------------*/
+
+#HalfCircle #ConectUS_pic {
+    margin-top: 135px;
+    margin-right: 80px;
+    position: absolute;
+}
+/*מיקום וגודל רקע הכותרת - פס הצבע הירוק*/
+#Mashov_Headline {
+    margin-top: 35px;
+    background-image: url("../Img/Accordion_header.png");
+    background-repeat: no-repeat;
+    height: 27px;
+    width: 677px;
+    margin-top: -135px;
+    margin-right: 210px;
+}
+
+/*מיקום טופס צור הקשר*/
+form {
+    margin-right: 250px;
+    margin-top: 10px;
+    line-height: 30px;
+    position: absolute;
+}
+    /*הגדרת גודל שדות הקלט*/
+    form #input2, #Text1, #textarea1 {
+        width: 300px;
+    }
+/*הגדרות גודל, צבע ומיקום כפתור השלח*/
+#Send {
+    background-color: #F8F7F5;
+    border: 1px solid #CBE5A6;
+    height: 20px;
+    width: 306px;
+    font-family: 'FbPekan';
+    font-size: 18px;
+    -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+    #Send:hover {
+        border: 1px solid #547823;
+    }
+/*מיקום תמונת הצוות*/
+#TeamPic {
+    margin-top: -300px;
+    margin-right: 600px;
+    position: absolute;
+}
+/*---------------------------------------------------סוף דף צור קשר--------------------------------------------------------------*/
+
+/*-----------------------------------------------מפת אתר----------------------------------------*/
+
+/*מיקום פיקטוגרמת תרשים זרימה בחצי העיגול*/
+#HalfCircle #Map_Icon {
+margin-top:130px;
+margin-right:78px;
+}
+/*הגדרות למפת האתר*/
+#SiteMap {
+    margin-right:-100px;
+    margin-top:30px;
+    height: 450px;
+}
+/*מעבר עכבר על קישור במפת אתר*/
+#SiteMap li:hover > a{
+    text-decoration:underline;
+}
+/*הגדרות לעמודת תנועות נוער*/
+#Tnuot_Noaar {
+    width: 130px;
+    margin-right: 212px;
+    margin-top: 40px;
+    position: absolute;
+}
+/*הגדרות לכותרות העמודות*/
+.MapHeading {
+    background-image: url("../Img/Map_Heading.png");
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 124px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+/*יישור הרשימה*/
+.UlAlign {
+    margin-right: 10px;
+    line-height: 19px;
+    padding-top: 5px;
+}
+
+/*הזחת רשימה רמה שנייה והקטנת פונט*/
+#Tnuot_Noaar ul li ul li {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+/*הגדרות לעמודת ארגון מול תנועה*/
+#TnuahVSIrgun {
+    height: 350px;
+    width: 130px;
+    margin-right: 362px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+
+/*הגדרות לעמודת פורומים*/
+#Forums {
+    height: 350px;
+    width: 130px;
+    margin-right: 512px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+/*הגדרות לעמודת אודות*/
+#About {
+    height: 350px;
+    width: 130px;
+    margin-right: 662px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+/*הגדרות לעמודת צור קשר*/
+#Contect {
+    height: 350px;
+    width: 130px;
+    margin-right: 812px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+.notDeveloped {
+    color: rgb(192, 192, 192);
+}
+/*-----------------------------------------------סוף מפת אתר----------------------------------------*/
+
+/*------------------------------------------------------------דף אודות ----------------------------------------------------------*/
+
+/*מיקום איזור התוכן*/
+#AboutUS_DATA {
+    margin-right: 250px;
+    margin-top: -60px;
+}
+    /*מיקום פסקאות*/
+    #AboutUS_DATA p {
+        line-height: 30px;
+        margin-top: 5px;
+        padding-top: 15px;
+    }
+/*מיקום וגודל רקע הכותרת - פס הצבע הירוק*/
+#AboutUS_back {
+    background-image: url("../Img/Accordion_header.png");
+    background-repeat: no-repeat;
+    height: 27px;
+    width: 677px;
+    margin-top: 93px;
+    margin-right: -40px;
+}
+/*מיקום רשימות בתוך התוכן*/
+#AboutUS_DATA ul li {
+    margin-right: 13px;
+}
+
+/*מיקום תמונת הפרצופים שלנו בצד*/
+.OurFaces {
+    position: absolute;
+    margin-right: 47px;
+    margin-top: 35px;
+}
+
+/*מיקום וגודל לוגו המכון בחצי העיגול*/
+#HalfCircle #HitLogo {
+    width: 110px;
+    margin-right: 55px;
+}
+
+/*נראות הקישורים בדף*/
+#AboutUS_DATA a {
+    text-decoration: underline;
+    color: #547823;
+}
+/*מיקום הטקסט והלוגו לאתר המחלקה*/
+#AboutUS_DATA #Telemlink {
+    margin-right: 90px;
+    margin-top: -70px;
+}
+
+#AboutUS_DATA #Telemlink {
+    width: 160px;
+    line-height: 16px;
+}
+
+    #AboutUS_DATA #Telemlink a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+#Telemlinkpic {
+    margin-right: -20px;
+}
+/*---------------------------------------------------------דף אודות סוף-----------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------Footer----------------------------------------*/
+/*הגדרות לתפריט בחלק התחתון*/
+#FooterNAV {
+    height: 45px;
+    background-color: #CBE5A6;
+    width: 960px;
+    margin-top: 25px;
+    color: #3F3F3F;
+}
+
+    #FooterNAV ul li {
+        font-size: 14px;
+        display: inline-block;
+    }
+
+        #FooterNAV ul li:after {
+            content: " |";
+        }
+
+        #FooterNAV ul li:last-child:after {
+            content: none;
+        }
+
+    #FooterNAV ul {
+        margin-right: 769px;
+        margin-top: 17px;
+        position: absolute;
+    }
+        /*הגדרות מעבר עכבר לחלק התחתון*/
+        #FooterNAV ul li:hover a {
+            color: #4F4F4F;
+        }
+
+/*-----------------------------------------------End Footer----------------------------------------*/
+
+
+
+

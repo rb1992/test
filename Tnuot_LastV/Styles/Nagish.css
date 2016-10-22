@@ -1,0 +1,17 @@
+﻿/*מיקום קישור דילוג לתוכן כאשר פותחים את העמוד*/
+#Nagish a, #Nagish a:hover, #Nagish a:visited {
+    position: absolute;
+    top: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+}
+/*מיקום דלג לתוכן במעבר עם טאב*/
+#Nagish a:active, #Nagish a:focus {
+        position: absolute;
+        top:8px;
+        right:10px;
+        width: auto;
+        height: auto;
+ }
